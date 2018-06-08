@@ -495,7 +495,7 @@ p {
 #loader {
   width: 200px;
   height: 400px;
-  position: absolute;
+  position: relative;
   left: 50%;
   /* centers the loading animation horizontally one the screen */
   top: 50%;
