@@ -1,0 +1,316 @@
+<!--<?php
+    session_start();
+
+    if(!isset($_SESSION['logged'])){
+        echo "<script>window.top.location='index.php'</script>"
+    }
+    else{
+        if(($_SESSION['logged'])==false){
+            echo "<script>window.top.location='index.php'</script>"
+        }
+    }
+?>-->
+
+<html>
+    <head>
+        <title>
+            REDANTS 
+        </title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+           <!-- Stylesheets -->
+  <link rel="stylesheet" href="css1/style.css">
+  <link rel="stylesheet" href="css1/set1.css">
+
+         <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+         <style>
+ 			.btn-outline {
+			    background-color: red;
+			    transition: all .5s;
+
+			}
+			@font-face {
+			font-family: "AR CHRISTY";
+			font-family: "Showcard Gothic";
+			src: url("fonts/ARCHRISTY.ttf") format("ttf"),
+			     url("fonts/SHOWG.ttf") format("ttf"),
+			
+			}
+
+			.btn-primary.btn-outline {
+			    color: #ffffff;
+			}
+
+			.btn-primary.btn-outline:hover{
+			    color:red;
+                border: 2px solid red;
+                background-color: white;
+			}
+            /* for nav bar color and dropssshadow */
+             .navbar-custom {
+                    color: #ffffff;
+                    background-color: red;
+                    -webkit-box-shadow: 0 8px 6px -6px #999;
+                    -moz-box-shadow: 0 8px 6px -6px #999;
+                    box-shadow: 0 8px 6px -6px #999;
+                }
+                /*for nav bar brand white text*/
+                .navbar-default .navbar-brand {
+                    color: #fff;
+                }
+                /*for nav bar login and signp white text*/
+                .navbar-default .navbar-nav>li>a {
+                    color: #fff;
+                }
+                .navbar-default .navbar-nav>li>a:hover {
+                    color: white;
+                    text-decoration: underline;
+                     
+                }
+                .myFont{
+                    font-family: "AR CHRISTY";
+                    font-weight: bold;
+                }
+                .line{
+                    border-left: 1px solid white;
+                }
+                .left-side {
+					  /*position: relative;*/
+					  min-height: 90vh;
+					  /*text-align: center;*/
+					  background:  url()  ;
+					  background-size: cover;
+				}
+				.butSize{
+					border: 2px solid tomato;
+					padding: 9px 50px;
+					/*background-image: url(blurbck.jpg);*/
+				}
+				/*input[type="submit"].butSize:hover{
+					color: red;
+				}*/
+				.butPlace{
+					margin-top: 35%;
+					margin-left: 45%;
+				}
+				.redantFont{
+					font-family: Showcard Gothic;
+					font-weight: regular;
+				}
+				.white{
+					color: white;
+				}
+				.black{
+					color: black;
+				}
+
+				.imgprop{
+                    width: 115%;
+                    height: 20%;
+                }
+                .border{
+                    border: 1px solid red;
+                }
+        
+         </style>
+<style>
+body {
+   
+    background-image: url("images/ralogo.png");
+    background-color: black;
+  background-repeat: no-repeat;
+  background-size: 750px 420px;
+  background-position: left;
+ }
+</style>
+
+    </head>
+    <body>
+        <!-- nav bar start -->
+        <nav class="navbar navbar-default navbar-custom navbar-">
+            <div class="container-fluid">
+                
+                <div class="navbar-header">
+                        <button type = "button" class = "navbar-toggle" 
+                        data-toggle = "collapse" data-target = "#example-navbar-collapse" style="background-color: black">
+                        <span class = "sr-only">Toggle navigation</span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                        <span class = "icon-bar"></span>
+                     </button>
+                       
+                    <a href="index.html" class="navbar-brand myFont"><span class="white redantFont">RED</span> <span class="black redantFont">ANTS</span></a>
+                </div>
+                <div class="collapse navbar-collapse myFont"  id = "example-navbar-collapse">
+                    <ul class="nav navbar-nav  navbar-right" id="nav" style=" background-color:transparent">
+                        <li><a href="home.html" class="line "> Home </a></li>
+                        <li><a href="profile.html" class="line"> Profile </a></li>
+                        <li><a href="about.html" class="line"> Clubs </a></li>
+                        <li><a href="reports.html" class="line"> Reports</a></li>
+                        <li><a href="changepwd.html" class="active line">Change Password</a></li>
+                        <li><a href="feedback.html" class="line"> Feedback</a></li>
+                        <li><a href="#" class="line">Signout  </a></li>
+        
+
+                     
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar end -->
+        
+    
+       
+</div>
+
+<div id="main-wrapper">
+    
+  <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <header>
+                &nbsp; 
+            </header>
+          </div>
+          <div> </div>
+
+
+      
+     
+	
+      <form method="post" action="php/feedback.php" name="register" style=" background-color: black;">
+			<div class="col-md-6 right-side right">
+                 <div style="right: px" >    <h3 style="color: white"> <strong style="color: red">FEED</strong>BACK </h3></div>
+                 <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" type="text" name="fname"  />
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+                      <span class="input__label-content input__label-content--hoshi">Name *</span>
+                    </label>
+                  </span>
+                  <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" type="number" name="mobile"/>
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="email">
+                      <span class="input__label-content input__label-content--hoshi">Mobile *</span>
+                    </label>
+                  </span>
+                  <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" type="email" name="email"  />
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+                      <span class="input__label-content input__label-content--hoshi">Email*</span>
+                    </label>
+                  </span>
+                  <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" type="text" name="about"  />
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+                      <span class="input__label-content input__label-content--hoshi">Subject *</span>
+                    </label>
+                  </span>
+                  <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" type="text" name="about"  />
+                    <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+                      <span class="input__label-content input__label-content--hoshi">Message *</span>
+                    </label>
+                  </span>
+			
+        <div class="cta">
+          <button class="btn btn-primary pull-left" type="submit">
+            Send Feedback
+          </button>
+</div>
+
+        
+		</div>
+    </form>
+  
+    
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='google-sheet.js'></script>
+    </div>
+  </div>
+
+</div> <!-- end #main-wrapper -->
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/classie.js"></script>
+<script>
+  (function() {
+    // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+    if (!String.prototype.trim) {
+      (function() {
+        // Make sure we trim BOM and NBSP
+        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+        String.prototype.trim = function() {
+          return this.replace(rtrim, '');
+        };
+      })();
+    }
+
+    [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+      // in case the input is already filled..
+      if( inputEl.value.trim() !== '' ) {
+        classie.add( inputEl.parentNode, 'input--filled' );
+      }
+
+      // events:
+      inputEl.addEventListener( 'focus', onInputFocus );
+      inputEl.addEventListener( 'blur', onInputBlur );
+    } );
+
+    function onInputFocus( ev ) {
+      classie.add( ev.target.parentNode, 'input--filled' );
+    }
+
+    function onInputBlur( ev ) {
+      if( ev.target.value.trim() === '' ) {
+        classie.remove( ev.target.parentNode, 'input--filled' );
+      }
+    }
+  })();
+  
+  $(document).ready(function(){
+  setTimeout(function(){$('.messages.status').fadeOut();}, 8000);
+  $(window).click(function(){$('.messages.status').fadeOut();});
+});
+</script>
+
+
+
+
+
+
+
+
+        <!-- left-side is for image -->
+        <!-- <div class="img-responsive">
+        	<div class="left-side"> 
+            <form action="form.html" >
+                <button type="submit" class="btn btn-primary btn-outline butSize butPlace myFont">Get Started</button>    
+            </form>
+ 		</div>
+
+        </div> -->
+        <script>
+        
+        $(function(){
+            $.ajax({
+                url:'php/nav.php',
+                type:'GET',
+            success:function(msg){
+                $('#nav').load(msg);
+            }
+            });
+        });
+        
+        </script>
+        
+    </body>
+</html>

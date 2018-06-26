@@ -19,6 +19,10 @@
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+           <!-- Stylesheets -->
+  <link rel="stylesheet" href="css1/style.css">
+  <link rel="stylesheet" href="css1/set1.css">
+
          <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -80,7 +84,7 @@
 					  /*position: relative;*/
 					  min-height: 90vh;
 					  /*text-align: center;*/
-			
+					  background:  url()  ;
 					  background-size: cover;
 				}
 				.butSize{
@@ -118,10 +122,10 @@
 <style>
 body {
    
- 
-    background-color:black;
+    background-image: url("images/ralogo.png");
+    background-color: black;
   background-repeat: no-repeat;
-  background-size: 400px 200px;
+  background-size: 750px 420px;
   background-position: left;
  }
 </style>
@@ -129,6 +133,27 @@ body {
     </head>
     <body>
         <!-- nav bar start -->
+   <!--     <nav class="navbar navbar-default navbar-custom ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand myFont"><span class="white redantFont">RED</span> <span class="black redantFont">ANTS</span></a>
+                </div>
+                <div class="collapse navbar-collapse myFont">
+                    <ul class="nav navbar-nav navbar-right" id="nav">
+                        <li><a href="home.html" class="line"> Home </a></li>
+                        <li><a href="profile.html" class="line"> Profile </a></li>
+                        <li><a href="about.html" class="line"> Clubs </a></li>
+                        <li><a href="Subscription.html" class="line"> Red Ants  - First 200 Registrations </a></li>
+                        <li><a href="changepwd.html" class="line">Change Password</a></li>
+                        <li><a href="feedback.html" class="line"> Feedback</a></li>
+                        <li><a href="#" class="line">Signout  </a></li>
+        
+
+                     
+                    </ul>
+                </div>
+            </div>
+        </nav>-->
         <nav class="navbar navbar-default navbar-custom navbar-">
                 <div class="container-fluid">
                     
@@ -142,8 +167,6 @@ body {
                          </button>
                            
                         <a href="index.html" class="navbar-brand myFont"><span class="white redantFont">RED</span> <span class="black redantFont">ANTS</span></a>
-                    
-         
                     </div>
                     <div class="collapse navbar-collapse myFont"  id = "example-navbar-collapse">
                         <ul class="nav navbar-nav  navbar-right" id="nav" style=" background-color:transparent">
@@ -164,9 +187,117 @@ body {
         <!-- nav bar end -->
         
     
-        <img src="banner..jpg" style="height: auto; width: 100%; background-size: cover  ">
-   
+       
 </div>
+
+<div id="main-wrapper">
+    
+  <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <header>
+                &nbsp; 
+            </header>
+          </div>
+          <div> </div>
+
+
+      
+     
+	
+      <form method="post" action="php/changepwd.php" name="register" style=" background-color: black;">
+			<div class="col-md-6 right-side right">
+                 <div style="right: px" >    <h3 style="color: white"> <strong style="color: red">Change</strong> Password </h3></div>
+                    <span class="input input--hoshi">
+                            <input class="input__field input__field--hoshi" type="password" name="password" />
+                          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+                            <span class="input__label-content input__label-content--hoshi">Old Password *</span>
+                          </label>
+                            </span>
+			<span class="input input--hoshi">
+			<input class="input__field input__field--hoshi" type="password" name="password" />
+          <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+            <span class="input__label-content input__label-content--hoshi">New Password *</span>
+          </label>
+            </span>
+            <span class="input input--hoshi">
+                    <input class="input__field input__field--hoshi" type="password" name="password" />
+                  <label class="input__label input__label--hoshi input__label--hoshi-color-3" for="name">
+                    <span class="input__label-content input__label-content--hoshi">Confirm Password *</span>
+                  </label>
+                    </span>
+			
+        <div class="cta">
+          <button class="btn btn-primary pull-left" type="submit">
+            Commit
+          </button>
+</div>
+
+        
+		</div>
+    </form>
+  
+    
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script src='google-sheet.js'></script>
+    </div>
+  </div>
+
+</div> <!-- end #main-wrapper -->
+
+<!-- Scripts -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/classie.js"></script>
+<script>
+  (function() {
+    // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+    if (!String.prototype.trim) {
+      (function() {
+        // Make sure we trim BOM and NBSP
+        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+        String.prototype.trim = function() {
+          return this.replace(rtrim, '');
+        };
+      })();
+    }
+
+    [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+      // in case the input is already filled..
+      if( inputEl.value.trim() !== '' ) {
+        classie.add( inputEl.parentNode, 'input--filled' );
+      }
+
+      // events:
+      inputEl.addEventListener( 'focus', onInputFocus );
+      inputEl.addEventListener( 'blur', onInputBlur );
+    } );
+
+    function onInputFocus( ev ) {
+      classie.add( ev.target.parentNode, 'input--filled' );
+    }
+
+    function onInputBlur( ev ) {
+      if( ev.target.value.trim() === '' ) {
+        classie.remove( ev.target.parentNode, 'input--filled' );
+      }
+    }
+  })();
+  
+  $(document).ready(function(){
+  setTimeout(function(){$('.messages.status').fadeOut();}, 8000);
+  $(window).click(function(){$('.messages.status').fadeOut();});
+});
+</script>
+
+
+
+
+
+
+
+
         <!-- left-side is for image -->
         <!-- <div class="img-responsive">
         	<div class="left-side"> 

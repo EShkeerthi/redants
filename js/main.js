@@ -87,25 +87,25 @@ map.addMarker({
  * ================================
  */
 
-$('#contact-form').validate({
-	rules:{
-		name:'required',
-		email: 'required',
-		message: 'required'
-	},
+// $('#contact-form').validate({
+// 	rules:{
+// 		name:'required',
+// 		email: 'required',
+// 		message: 'required'
+// 	},
 
-	messages:{
-		name:'Please enter your name',
-		email:'Please enter a valid email',
-		message: 'Please write down your messsage'
-	},
+// 	messages:{
+// 		name:'Please enter your name',
+// 		email:'Please enter a valid email',
+// 		message: 'Please write down your messsage'
+// 	},
 
-    errorClass:"local-error",
+//     errorClass:"local-error",
 
-	submitHandler: function(){
+// 	submitHandler: function(){
         
-    }
-})
+//     }
+// })
 
 
 

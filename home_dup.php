@@ -1,0 +1,384 @@
+<html>
+    <head>
+        <title>
+            REDANTS Winners List
+        </title>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+         <style>
+ 			.btn-outline {
+			    background-color: red;
+			    transition: all .5s;
+
+			}
+			@font-face {
+			font-family: "AR CHRISTY";
+			font-family: "Showcard Gothic";
+			src: url("fonts/ARCHRISTY.ttf") format("ttf"),
+			     url("fonts/SHOWG.ttf") format("ttf"),
+			
+			}
+
+			.btn-primary.btn-outline {
+			    color: #ffffff;
+			}
+
+			.btn-primary.btn-outline:hover{
+			    color:red;
+                border: 2px solid red;
+                background-color: white;
+			}
+            /* for nav bar color and dropssshadow */
+             .navbar-custom {
+                    color: #ffffff;
+                    background-color: red;
+                    -webkit-box-shadow: 0 8px 6px -6px #999;
+                    -moz-box-shadow: 0 8px 6px -6px #999;
+                    box-shadow: 0 8px 6px -6px #999;
+                }
+                /*for nav bar brand white text*/
+                .navbar-default .navbar-brand {
+                    color: #fff;
+                }
+                /*for nav bar login and signp white text*/
+                .navbar-default .navbar-nav>li>a {
+                    color: #fff;
+                }
+                .navbar-default .navbar-nav>li>a:hover {
+                    color: white;
+                    text-decoration: underline;
+                     
+                }
+                .myFont{
+                    font-family: "AR CHRISTY";
+                    font-weight: bold;
+                }
+                .line{
+                    border-left: 1px solid white;
+                }
+                .left-side {
+					  /*position: relative;*/
+					  min-height: 90vh;
+					  /*text-align: center;*/
+					  background:  url(bgif.gif)  ;
+					  background-size: cover;
+				}
+				.butSize{
+					border: 2px solid tomato;
+					padding: 9px 50px;
+					/*background-image: url(blurbck.jpg);*/
+				}
+				/*input[type="submit"].butSize:hover{
+					color: red;
+				}*/
+				.butPlace{
+					margin-top: 35%;
+					margin-left: 45%;
+				}
+				.redantFont{
+					font-family: Showcard Gothic;
+					font-weight: regular;
+				}
+				.white{
+					color: white;
+				}
+				.black{
+					color: black;
+				}
+				.red{
+                    color: red;
+                }
+                p{
+                    border-right: 2px solid red;
+					text-transform: uppercase;
+                    padding-left:23%; 
+                }
+                p:hover{
+                    border-left: 2px solid red;
+                    font-weight: bold;
+                    margin-left: 20px;
+                }
+                h1:hover:after{
+                    content: 'TOP 200 Students';
+                }
+                .c
+                {
+                    text-align: center;
+                }
+        
+         </style>
+         <script type="text/javascript">
+             
+         </script>
+    </head>
+    <body>
+        <!-- nav bar start -->
+        <nav class="navbar navbar-default navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.php" class="navbar-brand myFont"><span class="white redantFont">RED</span> <span class="black redantFont">ANTS</span></a>
+                </div>
+                <div class="collapse navbar-collapse myFont">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <li><a href="home.html" class="line">Home</a></li>
+                        <li><a href="#" class="line">Search Halls</a></li>
+                        <li><a href="login.html" class="line">Login</a></li> -->
+                        <li><a href="index.php" class="line">Home</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav bar end -->
+        <!-- left-side is for image -->
+        <h1 class="redantFont c ">
+            <span class="red">RED </span>
+            <span class="black">ANTS</span><br>
+             Winners
+         </h1>
+        <div class="row">
+<div id="one" class="col-md-2 " >
+<p>14K61A03A1</p>
+<p>14K61A05B9</p>
+<p>15k65a0314</p>
+<p>14K61A0108</p>
+<p>14K61A0587</p>
+<p>14K61A05B1</p>
+<p>14K61A0385</p>
+<p>14K61A0126</p>
+<p>15K65A0412</p>
+<p>14K61A0595</p>
+<p>14K61A05A9</p>
+<p>15K65A0511</p>
+<p>14K61A05A3</p>
+<p>15k65a0508</p>
+<p>14K61A0576</p>
+<p>14K61A0581</p>
+<p>14K61A05A2</p>
+<p>14k61a0592</p>
+<p>14K61A05B6</p>
+<p>14K61A05A4</p>
+<p>14K61A0594</p>
+<p>15K65A0416</p>
+<p>16k61a04f0</p>
+<p>13K61A0385</p>
+<p>14K61A0390</p>
+<p>14K61A0492</p>
+<p>14K61A05B0</p>
+<p>14K61A0591</p>
+<p>14K61A0562</p>
+<p>14K61A0307</p>
+<p>15K65A0513</p>
+<p>14K61A0563</p>
+<p>15k61a03b7</p>
+<p>15K65A0306</p>
+</div>
+
+<div id="two" class="col-md-2">
+<p>14K61A0586</p>
+<p>14K61A0561</p>
+<p>14K61A0547</p>
+<p>14K61A0567</p>
+<p>14K61A05A1</p>
+<p>14k61A0210</p>
+<p>15K65A0512</p>
+<p>14K61A0109</p>
+<p>14k61a1202</p>
+<p>14k61a1201</p>
+<p>14K61A05A6</p>
+<p>16K61A1219</p>
+<p>14K61A0566</p>
+<p>16K61A1214</p>
+<p>14k61ao579</p>
+<p>15K61A1240</p>
+<p>15K61A1245</p>
+<p>14K61A0102</p>
+<p>16k61a1242</p>
+<p>15K61A1207</p>
+<p>16K61A1220</p>
+<p>16K61A1230</p>
+<p>15k61a1204</p>
+<p>16K61A1247</p>
+<p>16K61A1233</p>
+<p>14K61A0597</p>
+<p>16k61a1217</p>
+<p>15K61A1244</p>
+<p>16K61A1225</p>
+<p>16K61A1204</p>
+<p>16k61a0467</p>
+<p>16K61A1226</p>
+<p>16K61A1215</p>
+<p>15k61a1252</p>
+</div>
+
+<div id="one" class="col-md-2">
+    <p>16K61A1227</p>
+<p>16k61a1240</p>
+<p>15K61A1231</p>
+<p>16K61A1213</p>
+<p>15K61A1250</p>
+<p>15K61A1247</p>
+<p>14K61A0569</p>
+<p>16K61A1203</p>
+<p>14k61ao599</p>
+<p>16K61A1246</p>
+<p>15k61a1217</p>
+<p>16K61A1211</p>
+<p>16K61A1212</p>
+<p>16K61A1229</p>
+<p>16k61a1249</p>
+<p>16K61A1239</p>
+<p>15K61A1239</p>
+<p>14k61a0570</p>
+<p>16K61A1201</p>
+<p>14K61A0588</p>
+<p>16K61A1237</p>
+<p>14K61A05B5</p>
+<p>14K61A0134</p>
+<p>16k61a1245</p>
+<p>14K61A0568</p>
+<p>14K61A0574</p>
+<p>14K61A0577</p>
+<p>14k61a0598</p>
+<p>14K61A0596</p>
+<p>14K61A0578</p>
+<p>14k61a0560</p>
+<p>14K61A05A7</p>
+<p>14K61A0123</p>
+</div>
+
+<div id="two" class="col-md-2">
+    <p>16K61A1252</p>
+<p>14K61A05B3</p>
+<p>14k61a1206</p>
+<p>14k61a0585</p>
+<p>16k61ao4d2</p>
+<p>14K61A1204</p>
+<p>14K61A0571</p>
+<p>14K61A1205</p>
+<p>14k61a1203</p>
+<p>14K61A1209</p>
+<p>14k61a1212</p>
+<p>14K61A1208</p>
+<p>14K61A0119</p>
+<p>15k61a1232</p>
+<p>15K61A1216</p>
+<p>15K61A1246</p>
+<p>15k61a1251</p>
+<p>15k61a1233</p>
+<p>15K61A1208</p>
+<p>15k61a1226</p>
+<p>15K61A0594</p>
+<p>15k61a1202</p>
+<p>15k61a1230</p>
+<p>15K61A1243</p>
+<p>15K61A1242</p>
+<p>15K61A1248</p>
+<p>15K61A1254</p>
+<p>15K61A1238</p>
+<p>15K61A1241</p>
+<p>15K61A1228</p>
+<p>15K61A1220</p>
+<p>15K61A1224</p>
+<p>15K61A1235</p>
+</div>
+
+<div id="one" class="col-md-2">
+<p>15K61A1223</p>
+<p>15k61a1201</p>
+<p>15K61A1214</p>
+<p>15k61a1256</p>
+<p>15K61A1255</p>
+<p>14K61A0493</p>
+<p>15K61A1211</p>
+<p>15k61a1227</p>
+<p>15K61A1249</p>
+<p>15k61a1229</p>
+<p>15K61A1219</p>
+<p>15K61A1203</p>
+<p>15K61A1253</p>
+<p>15k61a1234</p>
+<p>15K61A1215</p>
+<p>15k61a1212</p>
+<p>15K61A1206</p>
+<p>15K61A1213</p>
+<p>15K61A1258</p>
+<p>15K61A1236</p>
+<p>15k61a1205</p>
+<p>14K61A0463</p>
+<p>14K61A0104</p>
+<p>15K61A05A7</p>
+<p>15K61A03H3</p>
+<p>14K61A0473</p>
+<p>15K61A0562</p>
+<p>14K61A0136</p>
+<p>15K61A0593</p>
+<p>14K61A0468</p>
+<p>14K61A0490</p>
+<p>15K61A0588</p>
+<p>15K61A0590</p>
+</div>
+
+<div id="two" class="col-md-2">
+<p>14K61A0128</p>
+<p>15K61A05A1</p>
+<p>15K61A05A8</p>
+<p>14K61A0472</p>
+<p>16k61a0507</p>
+<p>14K61A0416</p>
+<p>16K61A05A3</p>
+<p>14k61a0505</p>
+<p>16k61a0522</p>
+<p>15K65A0108</p>
+<p>17k61A0147</p>
+<p>16k61a0575</p>
+<p>16K61A05B3</p>
+<p>16k61a04c2</p>
+<p>16K61A05B8</p>
+<p>16k61a0577</p>
+<p>16k61a0559</p>
+<p>16K61A0572</p>
+<p>16k61A0568</p>
+<p>16k61a0599</p>
+<p>15K65A0509</p>
+<p>14K61A05B8</p>
+<p>15K61A0503</p>
+<p>16K61A04F4</p>
+<p>16k61a04d5</p>
+<p>16k61a04f5</p>
+<p>15K61A05A5</p>
+<p>16k61a04e1</p>
+<p>17K65A0403</p>
+<p>14k61a0369</p>
+<p>16K61A04F6</p>
+<p>16K61A0420</p>
+<p>16K61A0480</p>
+</div>
+
+
+
+</div> 
+    <script type="text/javascript">
+        function toggleOne()
+        {
+            var one = document.querySelectorAll("#one");
+            one[0].classList.toggle("white");
+            one[1].classList.toggle("white");
+            one[2].classList.toggle("white");
+            setTimeout(toggleTwo, 1000);
+         }
+         function toggleTwo()
+        {
+            var two = document.querySelectorAll("#two");
+            two[0].classList.toggle("white");
+            two[1].classList.toggle("white");
+            two[2].classList.toggle("white");
+
+         }
+        setInterval(toggleOne, 1000);
+    </script>
+        
+    </body>
+</html>
